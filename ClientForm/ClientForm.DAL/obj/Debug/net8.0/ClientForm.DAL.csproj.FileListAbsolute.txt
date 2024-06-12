@@ -1,0 +1,12 @@
+D:\MVC\ClientForm\ClientForm.DAL\bin\Debug\net8.0\ClientForm.DAL.deps.json
+D:\MVC\ClientForm\ClientForm.DAL\bin\Debug\net8.0\ClientForm.DAL.dll
+D:\MVC\ClientForm\ClientForm.DAL\bin\Debug\net8.0\ClientForm.DAL.pdb
+D:\MVC\ClientForm\ClientForm.DAL\obj\Debug\net8.0\ClientForm.DAL.csproj.AssemblyReference.cache
+D:\MVC\ClientForm\ClientForm.DAL\obj\Debug\net8.0\ClientForm.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\MVC\ClientForm\ClientForm.DAL\obj\Debug\net8.0\ClientForm.DAL.AssemblyInfoInputs.cache
+D:\MVC\ClientForm\ClientForm.DAL\obj\Debug\net8.0\ClientForm.DAL.AssemblyInfo.cs
+D:\MVC\ClientForm\ClientForm.DAL\obj\Debug\net8.0\ClientForm.DAL.csproj.CoreCompileInputs.cache
+D:\MVC\ClientForm\ClientForm.DAL\obj\Debug\net8.0\ClientForm.DAL.dll
+D:\MVC\ClientForm\ClientForm.DAL\obj\Debug\net8.0\refint\ClientForm.DAL.dll
+D:\MVC\ClientForm\ClientForm.DAL\obj\Debug\net8.0\ClientForm.DAL.pdb
+D:\MVC\ClientForm\ClientForm.DAL\obj\Debug\net8.0\ref\ClientForm.DAL.dll
