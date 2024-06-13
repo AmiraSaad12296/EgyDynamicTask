@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .search-input {
+      width: 150px; /* Adjust the width as needed */
+    }
+  </style>
+</head>
+<body>
+  <a routerLink="/Clients/Add" class="btn btn-primary" style="margin-top: 10px;">
+    <i class="fas fa-plus"></i> New
+  </a>
+  <div class="button-group">
+    <button class="btn" (click)="exportToExcel()">
+      <i class="fas fa-file-excel"></i>
+    </button>
+    <button class="btn" (click)="printTable()">
+      <i class="fas fa-print"></i>
+    </button>
+    <button class="btn" (click)="toggleSRRow()">
+      <i class="fas fa-search"></i>
+    </button>
+    <button class="btn" (click)="refreshTable()">
+      <i class="fas fa-sync-alt"></i>
+    </button>
+    <button class="btn" (click)="openFilterModal()">
+      <i class="fas fa-cog"></i>
+    </button>
+  </div>
+
+  <table class="table table-bordered table-hover" id="clientTable">
+    <thead>
+      <tr *ngIf="showSRRow">
+        <th>SR</th>
+        <th>
+          <div class="col-header">
+            <input #name class="search-input" placeholder="search here" (keyup)="searchFilter()" type="text" name="" id="" />
+          </div>
+        </th>
+        <th>
+          <div class="col-header">
+            <input #Desc class="search-input" placeholder="search here" (keyup)="searchFilter()" type="text" name="" id="" />
+          </div>
+        </th>
+        <th>
+          <div class="col-header">
+            <input #Job class="search-input" placeholder="search here" (keyup)="searchFilter()" type="text" name="" id="" />
+          </div>
+        </th>
+        <th>
+          <div class="col-header">
+            <input #EnteredBy class="search-input" placeholder="search here" (keyup)="searchFilter()" type="text" name="" id="" />
+          </div>
+        </th>
+        <th>
+          <div class="col-header">
+            <input #EntryDate class="search-input" placeholder="search here" (keyup)="searchFilter()" type="text" name="" id="" />
+          </div>
+        </th>
+        <th>
+          <div class="col-header">
+            <input #LastModificationBy class="search-input" placeholder="search here" (keyup)="searchFilter()" type="text" name="" id="" />
+          </div>
+        </th>
+        <th>
+          <div class="col-header">
+            <input #LastModificationIn class="search-input" placeholder="search here" (keyup)="searchFilter()" type="text" name="" id="" />
+          </div>
+        </th>
+        <th>
+          <div class="col-header">
+            <input #Salesman class="search-input" placeholder="search here" (keyup)="searchFilter()" type="text" name="" id="" />
+          </div>
+        </th>
+        <th>
+          <div class="col-header">
+            <input #ClientSrc class="search-input" placeholder="search here" (keyup)="searchFilter()" type="text" name="" id="" />
+          </div>
+        </th>
+        <th>
+          <div class="col-header">
+            <input #ClientClass class="search-input" placeholder="search here" (keyup)="searchFilter()" type="text" name="" id="" />
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <th *ngFor="let column of displayedColumns">{{ column }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of clients">
+        <td>+</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.description }}</td>
+        <td>{{ item.job }}</td>
+        <td>{{ item.enteredBy }}</td>
+        <td>{{ item.entryDate }}</td>
+        <td>{{ item.lastModificationBy }}</td>
+        <td>{{ item.lastModificationIn }}</td>
+        <td>{{ item.salesMan }}</td>
+        <td>{{ item.clientSource }}</td>
+        <td>{{ item.clientClass }}</td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteClient(item.id)">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+          <a class="btn btn-primary" [routerLink]="['/Clients/Update', item.id]">
+            <i class="fas fa-edit"></i>
+          </a>
+        </td>
+      </tr>
+      <tr *ngIf="clients.length === 0">
+        <td colspan="12">No Clients found</td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    <button (click)="prevPage()" [disabled]="currentPage === 1">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button *ngFor="let page of totalPagesArray" (click)="goToPage(page)" [disabled]="currentPage === page">
+      {{ page }}
+    </button>
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <div *ngIf="showFilterDialog" class="filter-dialog">
+    <h4><i></i> Select Columns</h4>
+    <form>
+      <div *ngFor="let column of allColumns">
+        <label>
+          <input type="checkbox" [checked]="displayedColumnsMap[column]" (change)="toggleColumn(column)" />
+          {{ column }}
+        </label>
+      </div>
+    </form>
+    <button (click)="applyFilter()">Apply</button>
+  </div>
+</body>
+</html>

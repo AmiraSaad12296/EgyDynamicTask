@@ -2753,11 +2753,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MVC\\ClientForm\\ClientForm.DAL\\ClientForm.DAL.csproj",
+      "projectUniqueName": "D:\\MVC\\EgyDynamicTask\\ClientForm\\ClientForm.DAL\\ClientForm.DAL.csproj",
       "projectName": "ClientForm.DAL",
-      "projectPath": "D:\\MVC\\ClientForm\\ClientForm.DAL\\ClientForm.DAL.csproj",
+      "projectPath": "D:\\MVC\\EgyDynamicTask\\ClientForm\\ClientForm.DAL\\ClientForm.DAL.csproj",
       "packagesPath": "C:\\Users\\Amira\\.nuget\\packages\\",
-      "outputPath": "D:\\MVC\\ClientForm\\ClientForm.DAL\\obj\\",
+      "outputPath": "D:\\MVC\\EgyDynamicTask\\ClientForm\\ClientForm.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Amira\\AppData\\Roaming\\NuGet\\NuGet.Config",

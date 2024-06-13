@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TMnjb4Dc2npfU0W8Zy7TG1QTQKzCf6UVqemIH8AxYtBqFr6N+G/v1JPyeAfc5nzraT/Xt+NIFQHgM6ljT3pVKw==",
+  "dgSpecHash": "qPI6Nv5+eyj29XoSYhvdn20bb25juHsghshJ6Ek2GIZajLq9cHoU81Slxkn+UfHlzetmWGzX5YLsVIfZ1463WA==",
   "success": true,
-  "projectFilePath": "D:\\MVC\\ClientForm\\ClientForm.DAL\\ClientForm.DAL.csproj",
+  "projectFilePath": "D:\\MVC\\EgyDynamicTask\\ClientForm\\ClientForm.DAL\\ClientForm.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Amira\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Amira\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

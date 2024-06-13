@@ -1,0 +1,52 @@
+<div class="mb-3">
+  <label for="name" class="form-label">Name</label>
+  <input type="text" class="form-control" id="name" [(ngModel)]="client.name">
+</div>
+
+<div class="mb-3">
+  <label for="description" class="form-label">Description</label>
+  <input type="text" class="form-control" id="description" [(ngModel)]="client.description">
+</div>
+
+<div class="mb-3">
+  <label for="job" class="form-label">Job</label>
+  <input type="text" class="form-control" id="job" [(ngModel)]="client.job">
+</div>
+
+<div class="mb-3">
+  <label for="enteredBy" class="form-label">Entered By</label>
+  <input type="text" class="form-control" id="enteredBy" [(ngModel)]="client.enteredBy">
+</div>
+
+<div class="mb-3">
+  <label for="entryDate" class="form-label">Entry Date</label>
+  <input type="date" class="form-control" id="entryDate" [ngModel]="client.entryDate | date:'yyyy-MM-dd'" (ngModelChange)="client.entryDate=$event">
+</div>
+
+<div class="mb-3">
+  <label for="lastModificationBy" class="form-label">Last Modification By</label>
+  <input type="text" class="form-control" id="lastModificationBy" [(ngModel)]="client.lastModificationBy">
+</div>
+
+<div class="mb-3">
+  <label for="lastModificationIn" class="form-label">Last Modification In</label>
+  <input type="date" class="form-control" id="lastModificationIn" [ngModel]="client.lastModificationIn | date:'yyyy-MM-dd'" (ngModelChange)="client.lastModificationIn=$event">
+</div>
+
+<div class="mb-3">
+  <label for="salesMan" class="form-label">Sales Man</label>
+  <input type="text" class="form-control" id="salesMan" [(ngModel)]="client.salesMan">
+</div>
+
+<div class="mb-3">
+  <label for="clientSource" class="form-label">Client Source</label>
+  <input type="text" class="form-control" id="clientSource" [(ngModel)]="client.clientSource">
+</div>
+
+<div class="mb-3">
+  <label for="clientClass" class="form-label">Client Class</label>
+  <input type="text" class="form-control" id="clientClass" [(ngModel)]="client.clientClass">
+</div>
+
+<button class="btn btn-primary" (click)="save()">Update</button>
+<button class="btn btn-danger"(click)="Cancel()">Cancel</button>

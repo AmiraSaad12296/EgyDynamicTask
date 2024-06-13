@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MVC\\ClientForm\\ClientForm.BL\\ClientForm.BL.csproj": {}
+    "D:\\MVC\\EgyDynamicTask\\ClientForm\\ClientForm.BL\\ClientForm.BL.csproj": {}
   },
   "projects": {
-    "D:\\MVC\\ClientForm\\ClientForm.BL\\ClientForm.BL.csproj": {
+    "D:\\MVC\\EgyDynamicTask\\ClientForm\\ClientForm.BL\\ClientForm.BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MVC\\ClientForm\\ClientForm.BL\\ClientForm.BL.csproj",
+        "projectUniqueName": "D:\\MVC\\EgyDynamicTask\\ClientForm\\ClientForm.BL\\ClientForm.BL.csproj",
         "projectName": "ClientForm.BL",
-        "projectPath": "D:\\MVC\\ClientForm\\ClientForm.BL\\ClientForm.BL.csproj",
+        "projectPath": "D:\\MVC\\EgyDynamicTask\\ClientForm\\ClientForm.BL\\ClientForm.BL.csproj",
         "packagesPath": "C:\\Users\\Amira\\.nuget\\packages\\",
-        "outputPath": "D:\\MVC\\ClientForm\\ClientForm.BL\\obj\\",
+        "outputPath": "D:\\MVC\\EgyDynamicTask\\ClientForm\\ClientForm.BL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Amira\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\MVC\\ClientForm\\ClientForm.DAL\\ClientForm.DAL.csproj": {
-                "projectPath": "D:\\MVC\\ClientForm\\ClientForm.DAL\\ClientForm.DAL.csproj"
+              "D:\\MVC\\EgyDynamicTask\\ClientForm\\ClientForm.DAL\\ClientForm.DAL.csproj": {
+                "projectPath": "D:\\MVC\\EgyDynamicTask\\ClientForm\\ClientForm.DAL\\ClientForm.DAL.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "D:\\MVC\\ClientForm\\ClientForm.DAL\\ClientForm.DAL.csproj": {
+    "D:\\MVC\\EgyDynamicTask\\ClientForm\\ClientForm.DAL\\ClientForm.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MVC\\ClientForm\\ClientForm.DAL\\ClientForm.DAL.csproj",
+        "projectUniqueName": "D:\\MVC\\EgyDynamicTask\\ClientForm\\ClientForm.DAL\\ClientForm.DAL.csproj",
         "projectName": "ClientForm.DAL",
-        "projectPath": "D:\\MVC\\ClientForm\\ClientForm.DAL\\ClientForm.DAL.csproj",
+        "projectPath": "D:\\MVC\\EgyDynamicTask\\ClientForm\\ClientForm.DAL\\ClientForm.DAL.csproj",
         "packagesPath": "C:\\Users\\Amira\\.nuget\\packages\\",
-        "outputPath": "D:\\MVC\\ClientForm\\ClientForm.DAL\\obj\\",
+        "outputPath": "D:\\MVC\\EgyDynamicTask\\ClientForm\\ClientForm.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Amira\\AppData\\Roaming\\NuGet\\NuGet.Config",
